@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
-// --- MOCK API URL ---
-// In a real app, this would be in a .env file
-const API_BASE_URL = 'http://localhost:3003';
+// --- API URL ---
+// In production, this should point to your Render backend
+const API_BASE_URL = 'https://task-manager-xyz1.onrender.com'; // Replace with your actual Render URL
 
 // --- Helper Components ---
 
