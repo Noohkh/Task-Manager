@@ -1,0 +1,33 @@
+{
+  "name": "resume-portfolio",
+  "version": "1.0.0",
+  "description": "A personal portfolio website built with React and Vite",
+  "main": "main.jsx",
+  "scripts": {
+    "dev": "vite",
+    "dev:taskmanager": "vite --host --port 3000",
+    "dev:portfolio": "vite -c vite.portfolio.config.js",
+    "build": "vite build",
+    "build:portfolio": "vite build -c vite.portfolio.config.js",
+    "preview": "vite preview",
+    "predeploy": "npm run build:portfolio",
+    "deploy": "gh-pages -d dist-portfolio"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "personal-website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "gh-pages": "^6.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.8"
+  }
+}
