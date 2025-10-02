@@ -2,8 +2,9 @@
   "name": "resume-portfolio",
   "version": "1.0.0",
   "description": "A personal portfolio website built with React and Vite",
-  "main": "main.jsx",
+  "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "dev:taskmanager": "vite --host --port 3000",
     "dev:portfolio": "vite -c vite.portfolio.config.js",
@@ -22,6 +23,10 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "gh-pages": "^6.1.1"

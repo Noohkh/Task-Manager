@@ -189,7 +189,7 @@ app.delete('/api/tasks/:id', authMiddleware, (req, res) => {
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // For any request that doesn't match the API routes, send the React app
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
 
