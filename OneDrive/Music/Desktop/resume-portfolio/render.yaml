@@ -2,6 +2,7 @@ services:
   - type: web
     name: task-manager-api
     env: node
+    rootDir: .
     buildCommand: npm install
     startCommand: node server.js
     envVars:
